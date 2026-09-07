@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimus Prime AI - Chat</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>Optimus Prime</h1>
+                <button class="btn-new-chat" onclick="createNewSession()">+ New Chat</button>
+            </div>
+            <div class="sessions-list" id="sessionsList">
+                <p class="no-sessions">No sessions yet</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="chat-header">
+                <h2 id="chatTitle">Start a new conversation</h2>
+                <p id="sessionInfo" class="session-info"></p>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome-message">
+                    <h2>Welcome to Optimus Prime AI</h2>
+                    <p>Create a new chat or select an existing session to begin.</p>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Type your message here..."
+                    onkeypress="handleKeyPress(event)"
+                    disabled
+                />
+                <button class="btn-send" onclick="sendMessage()" disabled id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
