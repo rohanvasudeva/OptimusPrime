@@ -2,6 +2,8 @@
 
 A multi-turn AI chat application built with FastAPI, PostgreSQL, and Groq.
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Application-brightgreen?style=flat-square&logo=render&logoColor=white)](http://13.127.116.192:8000/)
+
 ## Features
 
 - Create, view, rename, and delete chat sessions
