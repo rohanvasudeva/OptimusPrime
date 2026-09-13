@@ -17,8 +17,8 @@ A multi-turn AI chat application built with FastAPI, PostgreSQL, and Groq.
 ## Requirements
 
 - Python 3.12+ for local development
-- PostgreSQL 16 (or Docker Desktop)
-- A Groq API key
+- PostgreSQL 16 (or Docker Desktop) - Relational, reliable, handles sessions/messages naturally.
+- A Groq API key - Very fast inference, simple API, suitable for real-time chatbot responses.
 
 ## Configuration
 
