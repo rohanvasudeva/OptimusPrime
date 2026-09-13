@@ -6,7 +6,7 @@ A multi-turn AI chat application built with FastAPI, PostgreSQL, and Groq.
 
 ## Features
 
-- Create, view, rename, and delete chat sessions
+- Create, view, and delete chat sessions
 - Persist user and assistant messages in PostgreSQL
 - Generate a chat title from the first user message
 - Stream assistant text to the browser with Server-Sent Events (SSE)
@@ -44,8 +44,6 @@ docker compose up --build
 ```
 
 Open the application at [http://localhost:8000/](http://localhost:8000/).
-Although Uvicorn reports that it is listening on `0.0.0.0:8000`, that is a
-bind address; use `localhost:8000` in a browser on the same machine.
 
 ## Run locally
 
